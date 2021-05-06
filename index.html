@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Beat Thrive</title>
+        <meta property="og:title" content="Beat Thrive" />
+        <meta property="og:description" content="Join the dance class now" />
+        <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMo3SdBLf7GH_RnnxyxXuiYW_UnDo2mgIkjA&usqp=CAU" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/9d89bb858d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="cont">
+            <div id="top">
+                Beat Thrive
+            </div>
+            <div id="ak">For girls & childrens</div>
+            <div id="typewriter_container">     
+                <div id="text"></div>
+                <div id="cursor">|</div>    
+            </div>
+            <div id="for">
+                <a href="https://www.sololearn.com/post/1073271/?ref=app">
+                    • For childerens visit here
+                </a><br>
+                <a href="https://www.sololearn.com/post/1073252/?ref=app">
+                    • For adult girls visit here
+                </a>
+            </div>
+            <div id="tx">Starting from 12<sup>th</sup> May</div>
+            <div id="contect">
+                <a href="tel:7392907678">
+                    <i class="fa fa-phone-square" aria-hidden="true" style="color:green;"></i>
+                </a>
+                <a href="mailto:raginigupta2401@gmail.com">
+                    <i class="fa fa-envelope" aria-hidden="true" style="color:orange;"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=+918726127376">
+                    <i class="fa fa-whatsapp" aria-hidden="true" style="color:lime;"></i>
+                </a>
+            </div>
+            <div id="base">By ragini mam</div>
+        </div>
+        <div class="loader_container">
+            <div class="loader_sub">
+                <div id="loader_1"></div>
+                <div id="loader_2"></div>
+                <div id="loader_3"></div>
+            </div>
+            <div class="loader_text"></div>
+        </div>
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+*{
+    box-sizing:border-box;
+    color:white;
+}
+body {
+    margin:0;
+    padding:0;
+    background-color:red;
+}
+body:before{
+    content:" ";
+    top: -100vw;
+    left:0;
+    position:fixed;
+    width:100vh;
+    height:100vw;
+    background-color:red;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMo3SdBLf7GH_RnnxyxXuiYW_UnDo2mgIkjA&usqp=CAU");
+    background-color:red;
+    transform:rotate(90deg);
+    transform-origin:0% 100%;
+    background-size:cover;
+    background-position:50% 50%;
+    opacity:0.6;
+    z-index: -1;
+}
+#cont{
+    width:90%;
+    margin:0 auto;
+    height:calc(100vh - 30px);
+    margin-top:15px;
+    border-style:solid;
+    position:relative;
+}
+body:after{
+    content:"Contect now";
+    position:absolute;
+    font-size:1.5pc;
+    width:180px;
+    background-color:blue;
+    top:100px;
+    left: -10px;
+    transform:rotate( -45deg);
+    transform-origin:0% 50%;
+    z-index: 1;
+    font-family: 'Patrick Hand', cursive;
+    text-align:center;
+}
+#top,#ak{
+    height:10vh;
+    width:100%;
+    background-color:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:2.5pc;
+    margin-top:20px;
+    font-family: 'Chelsea Market', cursive;
+}
+#ak{
+    margin-top:0;
+    font-size:1.2pc;
+    align-items:none;
+}
+#txt{
+    padding:15px;
+    text-align:center;
+    line-height:1.5pc;
+    margin-top:20px;
+    
+}
+#for{
+    text-align:left;
+    padding-left:15px;
+    text-decoration:none;
+    padding-top:30px;
+    line-height:1.5pc;
+    font-family: 'Chelsea Market', cursive;
+}
+a{
+    text-decoration:none;
+}
+
+#tx{
+    width:50%;
+    margin:0 auto;
+    text-align:center;
+    margin-top:20px;
+    font-size:2pc;
+    color:lime;
+    font-family: 'Patrick Hand', cursive;
+    animation:ak linear 0.5s infinite;
+}
+@keyframes ak{
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+sup{
+    color:lime;
+}
+#contect{
+    background-color:none;
+    width:100%;
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    padding:20px;
+    font-size:2pc;
+    margin-top:10px;
+}
+
+
+
+
+
+
+
+
+#typewriter_container{
+    margin:40px auto 10px auto;
+    text-align:center;
+    font-family: 'Patrick Hand', cursive;
+    height:20px;
+}
+#text{
+    display:inline;
+}
+#cursor{
+    display:inline-block;
+    vertical-align:middle;
+    width:3px;
+    height:18px;
+    animation: blink .50s step-end infinite;
+    line-height:60%;
+    font-size:20px;
+} 
+@keyframes blink{
+    from,to{
+        opacity:0;
+    }     
+    50%{
+        opacity:1;
+    }
+}
+#base{
+    width:100%;
+    text-align:right;
+    padding-right:10px;
+    margin-top:15px;
+    font-family: 'Patrick Hand', cursive;
+}
+.loader_container{
+    position:fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    background-color:black;
+}
+.loader_sub{
+    height:150px;
+    width:150px;
+    background-color:transparent;
+    margin-top:calc(50vh - 150px);
+    margin-left:calc(50vw - 75px);
+    position:relative;
+}
+.loader_sub > div{
+    height:5px;
+    width:150px;
+    position:absolute;
+    bottom:0;
+    border-radius:50px;
+    animation:animate1 1s ease-out infinite;
+    background:linear-gradient(90deg, transparent ,#8DF3FF);
+    background-repeat:no-repeat;
+}
+.loader_s > div{
+    height:4px !important;
+    width:130px !important;
+}
+#loader_1{
+    transform-origin:50% 50%;
+    transform:rotate(180deg);
+}
+#loader_2{
+    transform:rotate(-60deg);
+    transform-origin:0% 50%;
+}
+#loader_3{
+    transform:rotate(60deg);
+    transform-origin:100% 50%;
+}
+
+@keyframes animate1{
+    0%{
+        background-size:0% 100%;
+    }
+    100%{
+        background-size:100% 100%;
+    }
+    
+}
+.loader_text{
+    height:20px;
+    width:100vw;
+    background-color:none;
+    position:fixed;
+    margin-top:50px;
+    text-align:center;
+    font-size:30px;
+    letter-spacing:5px;
+}
+.loader_text::before{
+    color:white;
+    content:"Loading";
+    animation:animate2 2s infinite;
+}
+
+@keyframes animate2{
+    0%{
+        content:"Loading";
+    }
+    25%{
+        content:"Loading.";
+    }
+    50%{
+        content:"Loading..";
+    }
+    75%{
+        content:"Loading...";
+    }
+    100%{
+        content:"Loading...";
+    }
+    
+}
+
+
+        </style>
+        <script>
+window.onload = function(){
+    /*type writer effect logic --------------------*/
+    document.getElementsByClassName("loader_container")[0].style.display = "none";
+    var _CONTENT = [ 
+        "Want to dance but cant go outside", 
+        "Not a problem", 
+        "Here we bring classroom to your home.", 
+        "So are you ready to invest your time in right place?",
+    ];
+    var _PART = 0;
+    var _PART_INDEX = 0;
+    var _INTERVAL_VAL;
+    var _ELEMENT = document.querySelector("#text");
+    var _CURSOR = document.querySelector("#cursor");
+    
+    function Type() { 
+        var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+        _ELEMENT.innerHTML = text;
+        _PART_INDEX++;
+
+        if(text === _CONTENT[_PART]) {
+            _CURSOR.style.display = 'none';
+
+            clearInterval(_INTERVAL_VAL);
+            setTimeout(function() {
+                _INTERVAL_VAL = setInterval(Delete, 50);
+            }, 1000);
+        }
+    }
+
+    function Delete() {
+        var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+        _ELEMENT.innerHTML = text;
+        _PART_INDEX--;
+
+        if(text === '') {
+            clearInterval(_INTERVAL_VAL);
+
+            if(_PART == (_CONTENT.length - 1))
+                _PART = 0;
+            else
+                _PART++;
+        
+            _PART_INDEX = 0;
+
+            setTimeout(function() {
+                _CURSOR.style.display = 'inline-block';
+                _INTERVAL_VAL = setInterval(Type, 200);
+            }, 200);
+        }
+    }
+
+    _INTERVAL_VAL = setInterval(Type, 100);
+    /*type writer logic ends ----------------------*/
+}
+        </script>  
+    </body>
+</html>
